@@ -1,7 +1,75 @@
 <html>
   <head>
     <title>sample html page -> piyo</title>
+
+    <!-- 面倒なので css は内部に直書きする -->
+    <style type="text/css">
+      body {
+        font-family: 'Ubuntu Mono',sans-serif;
+      }
+    </style>
+
   </head>
   <body>
+    <div>
+      <h1>h1タグは見出しだよ</h1>
+
+      <p>pタグは段落だよ</p>
+
+      <ol>
+        <li>olタグは</li>
+        <li>順序つきリストで</li>
+        <li>各項目は &lt;li&gt; タグで表すよ</li>
+      </ol>
+
+      <ul>
+        <li>ulタグは</li>
+        <li>順序なしリストで</li>
+        <li>各項目は &lt;li&gt; タグで表すよ</li>
+        <ul>
+          <li>こんな風に</li>
+          <li>ネストさせることもできるよ</li>
+          <li>&lt;ol&gt; タグでも同様にできる</li>
+        </ul>
+      </ul>
+
+      <dl>
+        <dt>&lt;dl&gt; ってなんだろう</dt>
+        <dd>と思ったら定義リストらしい</dd>
+        <dt>Ruby</dt>
+        <dd>たのしい言語</dd>
+      </dl>
+
+      <pre>
+&lt;pre&gt; タグは整形済みテキストとのこと
+markdown でいうところの ``` で囲ったテキストみたいな感じなのかな
+
+pub fn hello() {
+    println!("Hello, world!");
+}
+      </pre>
+
+      google 検索
+      <form action="https://google.com/search">
+        <input type="text" id="q" name="q" />
+        <input type="submit" id="submit" name="submit" value="search" />
+      </form>
+
+      <blockquote>ここは引用文です</blockquote>
+    </div>
+    <div>
+      <h2>以下はインライン要素について</h2>
+
+      <p><abbr>HTML</abbr>には<em>いろいろ</em>な<strong>要素</strong>があるよ</p>
+      <p><dfn>web</dfn>とは</p>
+      <p>
+        &lt;code&gt; タグっていうコード用のタグがあるけど
+        インライン化されて一行にまとめられちゃうのか...
+        <code>
+          pub fn hello() {
+              println!("hello, hello, hello...");
+          }
+        </code>
+      </p>
   </body>
 </html>
